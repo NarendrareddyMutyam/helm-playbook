@@ -23,9 +23,6 @@
     dest: /usr/local/sbin
     mode: 0755
 
-- name: add chart repo
-  shell: "helm repo add stable https://kubernetes-charts.storage.googleapis.com/"
-
 - name: "Clean-up"
   file:
     path: "{{ tmp_dir }}"
